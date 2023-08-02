@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chack input value</title>
+    <style>
+        .container{
+            margin: auto;
+            max-width: 570px;
+            text-align: center;
+        }
+        span{
+            width: 100%;
+            background-color: blanchedalmond;
+            text-transform: capitalize;
+            font-size: 42px;
+            font-weight: 700;
+        }
+        .item{
+            width: 200px;
+            padding: 20px 20px;
+            background: #dddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <span>chack your value</span>
+    <br><br>
+    <input placeholder="input value" type="text" class="item" id="first">
+    <br><br>
+    <input placeholder="input value" type="text" class="item" id="second">
+    <br><br>
+    <h1 id="result"></h1>
+    <br><br>
+    <button onclick="chack()" type="button">Chack</button>
+    <br>
+    </div>
+    
+    <script>
+        function chack(){
+            var firstV=document.getElementById('first').value;
+            var secondV=document.getElementById('second').value;
+            var result=document.getElementById('result');
+
+            if(firstV==secondV){
+                result.innerHTML="value is ok";
+            }
+            else{
+                result.innerHTML="value is not ok";
+            }
+        }
+
+    </script>
+</body>
+</html>
