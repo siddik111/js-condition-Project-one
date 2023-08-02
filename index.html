@@ -46,9 +46,15 @@
 
             if(firstV==secondV){
                 result.innerHTML="value is ok";
+                if(firstV==0){
+                    result.innerHTML="First Box is Emty";
+                }
             }
             else{
                 result.innerHTML="value is not ok";
+                if(secondV==0){
+                    result.innerHTML="Second Box is Emty";
+                }
             }
         }
 
