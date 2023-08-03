@@ -9,6 +9,9 @@
             margin: auto;
             max-width: 570px;
             text-align: center;
+            background-color: #dddd;
+            padding: 50px;
+            border-radius: 30px;
         }
         span{
             width: 100%;
@@ -16,17 +19,35 @@
             text-transform: capitalize;
             font-size: 42px;
             font-weight: 700;
+            padding: 20px;
+            border-radius: 30px;
+
         }
         .item{
-            width: 200px;
+            margin-top: 20px;
+            width: 300px;
             padding: 20px 20px;
             background: #dddd;
+            border-radius: 30px;
+        }
+        button{
+            padding: 10px 40px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: .4s;
+            margin: 0 10px;  
+        }
+        button:hover{
+            border-color: gold;
+
         }
     </style>
 </head>
 <body>
     <div class="container">
-    <span>chack your value</span>
+    <form action="#">
+        <span>chack your value</span>
     <br><br>
     <input placeholder="input value" type="text" class="item" id="first">
     <br><br>
@@ -35,7 +56,11 @@
     <h1 id="result"></h1>
     <br><br>
     <button onclick="chack()" type="button">Chack</button>
+    <button onclick="resetD()" type="reset" value="Reset"> Reset</button>
     <br>
+    <!-- <button id="exit">Exit</button> -->
+    </form>
+
     </div>
     
     <script>
@@ -57,6 +82,14 @@
                 }
             }
         }
+
+        function resetD(){
+            alert("Are you sure ?");
+        };
+        // function closeWindo(){
+        //     var exitB=getElementById("exit")
+        //     exitB.close("index.html")
+        // }
 
     </script>
 </body>
